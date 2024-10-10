@@ -18,3 +18,12 @@ config :logger, level: :warning
 
 # Initialize plugs at runtime for faster test compilation
 config :phoenix, :plug_init_mode, :runtime
+
+config :food_truck_api, FoodTruckApi.Repo,
+  username: "postgres",
+  password: "postgres",
+  database: "food_truck_api_dev",
+  hostname: "localhost",
+  port: "5500",
+  show_sensitive_data_on_connection_error: true,
+  pool_size: 10
