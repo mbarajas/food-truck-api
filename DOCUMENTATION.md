@@ -24,3 +24,4 @@ This is a CRUD API written in Elixir using the Phoenix framework and food truck 
 - Harden the app by implementing useful middleware (logging, rate limitting, cors, etc)
 - Deploy the app to a server/container in a cloud service using a CI/CD pipeline and IaC.
 - Properly use the prod config.
+- Improve error handling by making it more clear to the user what went wrong (and perhaps build some internal error codes for developers to quickly identify issues)
