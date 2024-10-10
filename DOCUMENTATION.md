@@ -17,6 +17,7 @@ This is a CRUD API written in Elixir using the Phoenix framework and food truck 
 - Not use basic auth and use something more robust and leverage environment variables (or secrets manager) for credentials and database config
 - Utilize docker compose or kubernetes rather than a bunch of shell files
 - Take some time to normalize the data. A lot of the data in the CSV was bad/inconsistent so it was easier to make all columns strings in the database. Ideally we would want to use better typing (integers, decimals, datetimes, etc)
+- Improve seeding of database my reducing steps, automating, and adding some sort of polling to check if the upstream has updated to keep data fresh.
 - Enable Swagger for better documentation and providing a "front-end" for the API
 - Create a true front-end using react or some other framework
 - Harden the app by implementing useful middleware (logging, rate limitting, cors, etc)
